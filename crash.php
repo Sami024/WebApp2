@@ -1,3 +1,6 @@
+<?php
+global$conn;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
