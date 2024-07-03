@@ -1,0 +1,56 @@
+.italië{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/italiebg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.noorwegen{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/noorwegenbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nederland{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/nederlandbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.denemarken{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/denemarkenbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.spanje{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/spanjebg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.frankrijk{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/francebg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.brazilië{
+    width: auto;
+    height: 60vh;
+    border-radius: 12px;
+    background-image: url(../assets/images/Braziliëbg.jpg);
+    background-size: cover;
+    background-position: center;
+}

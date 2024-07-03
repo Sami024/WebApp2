@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", sans-serif;
+}
+
+:root {
+  --Black: #080708;
+  --Sand: #005004;
+  --White: #fef9ff;
+  --White-op: #fef9ffb1;
+  --Blue: #114320;
+  --Yellow: #106726;
+  --LightBlue: #04240f;
+  --Red: #ff101f;
+  --Gray: #868686;
+
+  --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  --shadow-yellow: #0b5810 0px 2px 4px 0px, #0b5810 0px 2px 6px 2px;
+}
+
+body {
+  background-color: var(--White);
+}
+
+/* Standaard elementen */
+h1 {
+  color: var(--White);
+  font-size: 40px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  color: var(--Gray);
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 25px;
+}
+
+input {
+  outline: none;
+  border: var(--Black) 2px solid;
+  border-radius: 10px;
+  background: var(--White);
+  text-align: center;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* nav */
+nav {
+  width: 100vw;
+  height: 12vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--Blue);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+}
+
+nav > h1 {
+  width: 100px;
+}
+
+#nav-svg {
+  position: fixed;
+  z-index: -1;
+  transform: scaleX(200%) scaleY(200%);
+}
+
+.link-row {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.link-row > a {
+  font-size: 16px;
+}
+
+/* homepage */
+
+.banner {
+  background-color: var(--LightBlue);
+  background-image: url("../assets/images/norway.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 88vh;
+
+  position: fixed;
+  z-index: -10;
+  top: 12vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: var(--shadow);
+}
+
+.searchbalk {
+  width: 80%;
+  height: 80px;
+  margin-left: 10%;
+  margin-top: calc(50vh - 25px);
+  margin-bottom: calc(50vh + 40px);
+
+  background: var(--White);
+  z-index: 2;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  outline: 5px solid var(--Yellow);
+  /*box-shadow: var(--shadow-yellow);*/
+
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 12vh;
+}
+
+.searchbalk.isSticky {
+  width: 100%;
+  margin-left: 0%;
+}
+
+.searchbalk > * {
+  height: 80%;
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+#landform {
+  width: 30%;
+  text-align: center;
+}
+
+#zoek-knop {
+  width: 10%;
+  cursor: pointer;
+}
+
+/*.vertrekdatum {
+    aspect-ratio: 1 / 1;
+}*/
+
+/* advertenties */
+.advertentieWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 12%;
+  width: 76%;
+  margin-top: 60px;
+}
+
+.advertentie {
+  width: 48%;
+  min-width: 400px;
+  max-width: 800px;
+  height: 400px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+}
+
+.adBanner {
+  width: 100%;
+  height: 35%;
+  background-image: url(../assets/images/norway.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.advertentie > .titelRow {
+  width: 80%;
+  margin-left: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advertentie > p {
+  width: 80%;
+  margin-left: 10%;
+  height: 35%;
+}
+
+.advertentie > a {
+  width: 80%;
+  margin-left: 10%;
+  height: 10%;
+  color: var(--Blue);
+  font-size: 14px;
+}
+
+.landenWrapper {
+  display: flex;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
+
+.landIMG {
+  box-sizing: border-box;
+
+  width: 20%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color: var(--Black);
+  display: flex;
+  align-items: flex-end;
+  border: var(--LightBlue) 3px solid;
+}
+
+.landIMG > p {
+  transition-duration: 250ms;
+  font-size: 2vw;
+  width: 80%;
+  padding: 10%;
+  color: var(--White);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 200, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+@media only screen and (max-width: 1053px) {
+  .advertentieWrapper {
+    justify-content: center;
+  }
+}
+
+/* login pagina */
+#loginForm {
+  margin-top: calc(12vh + 60px);
+  width: 30%;
+  height: 70vh;
+  margin-left: 35%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  box-shadow: var(--shadow);
+}
+
+#loginForm > input {
+  width: 80%;
+  height: 15%;
+  border-radius: 0px;
+  border: var(--Gray) 1px solid;
+  border-bottom: var(--Black) 2px solid;
+  font-size: 20px;
+}
+
+#loginForm > h2 {
+  margin-top: 16px;
+}
+
+#loginForm > a {
+  margin-top: 50px;
+  height: 10%;
+  color: var(--Blue);
+  font-size: 14px;
+}

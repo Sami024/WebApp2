@@ -1,0 +1,461 @@
+/* contact */
+.contact-container {
+  padding: 2vh;
+  color: #080708;
+  background-color: #fef9ffb1;
+  height: fit-content;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  position: relative;
+}
+
+.contact-bg-img {
+  background: url(../assets/images/strand.jpeg);
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.feedback-contact-container {
+  padding: 2vh;
+  color: #080708;
+  background-color: #fef9ffb1;
+  height: 84vh;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12vh;
+}
+
+.feedback-contact-bg-img {
+  background: url(../assets/images/strand.jpeg);
+  background-size: cover;
+}
+
+#feedback-contact-titel {
+  color: #080708;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+}
+
+#contact-text-h2 {
+  color: #080708;
+  display: flex;
+  justify-content: baseline;
+}
+
+#contact-input-text {
+  display: flex;
+  justify-content: baseline;
+  height: auto;
+  width: 100%;
+  text-align: initial;
+}
+
+/* reis pagina */
+.reis-pagina-container {
+  box-sizing: border-box;
+  margin: 5vw;
+  margin-top: 16vh;
+  height: 86vh;
+  width: 90vw;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.reis-foto-container {
+  width: auto;
+  height: 60vh;
+  border-radius: 12px;
+  background-image: url(../assets/images/Leuke-vakantiebestemmingen-NL.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.reis-info {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#naam-plek {
+  color: black;
+  width: fit-content;
+}
+
+li {
+  font-size: larger;
+}
+
+ul {
+  list-style: none;
+}
+
+#head-lijst {
+  margin-top: 20px;
+  color: var(--Blue);
+  text-align: left;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--Blue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.reis-recensies {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#prijs {
+  color: black;
+  width: fit-content;
+}
+
+.naam-prijs-balk {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: var(--Blue) solid 2px;
+}
+
+.reis-pagina-link-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* admin panel */
+.admin-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 86;
+  width: auto;
+  margin-top: 12vh;
+}
+
+.admin-reis-item {
+  box-shadow: var(--shadow);
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 6vh;
+  margin-top: 5vh;
+  border-radius: 12px;
+  width: 40vw;
+  max-width: 300px;
+  height: 200px;
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+}
+
+#admin-land-plaats-text {
+  color: var(--Black);
+  font-size: min(3vw, 24px);
+}
+
+.admin-head-text {
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: var(--White);
+}
+
+.admin-button-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: var(--White);
+  border-radius: 12px;
+  justify-content: space-evenly;
+  margin-top: 17%;
+}
+
+/* .admin-button-delete{
+    border: #FF101F solid 2px;
+    border-radius: 12px;
+    display: flex; 
+    width: 10vw;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+} */
+.admin-button-edit {
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  font-size: min(2vw, 24px);
+  justify-content: center;
+  align-items: center;
+  color: var(--Red);
+  background-color: var(--White);
+}
+
+.admin-button-boekingen {
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  font-size: min(2vw, 24px);
+  justify-content: center;
+  align-items: center;
+  color: var(--Red);
+  background-color: var(--White);
+}
+
+/* admin boekingen */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  border: #0b5810 solid 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #99b8ff;
+}
+
+.admin-boekingen-annuleer-link {
+  display: flex;
+  width: auto;
+  height: auto;
+  font-size: min(2vw, 24px);
+  justify-content: center;
+  align-items: center;
+  color: var(--Red);
+}
+
+#admin-boekingen-button {
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  font-size: min(2vw, 24px);
+  justify-content: center;
+  align-items: center;
+  color: var(--Blue);
+  background-color: var(--White);
+}
+
+/* admin edit */
+
+#admin-edit-button {
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  font-size: min(2vw, 24px);
+  justify-content: center;
+  align-items: center;
+  color: var(--Blue);
+  background-color: var(--White);
+}
+
+/* mijn reizen */
+.mijn-reizen-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 86;
+  width: auto;
+  margin-top: 12vh;
+}
+
+.mijn-reizen-reis-item {
+  box-shadow: var(--shadow);
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 6vh;
+  margin-top: 5vh;
+  padding: 7px;
+  border-radius: 12px;
+  width: 40vw;
+  max-width: 300px;
+  height: 200px;
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#mijn-reizen-land-plaats-text {
+  color: var(--Black);
+  font-size: min(3vw, 24px);
+}
+
+.mijn-reizen-head-text {
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  background-color: var(--White);
+}
+
+.mijn-reizen-button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 17%;
+}
+
+/* .mijn-reizen-button-delete{
+    border: #FF101F solid 2px;
+    border-radius: 12px;
+    display: flex; 
+    width: 10vw;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+} */
+.mijn-reizen-button-edit {
+  border: #085c10 solid 2px;
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mijn-reizen-button-boekingen {
+  border: #04590a solid 2px;
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mijn-reizen-annuleer-link {
+  border-radius: 12px;
+  display: flex;
+  width: 10vw;
+  height: 50px;
+  font-size: min(2vw, 24px);
+  justify-content: center;
+  align-items: center;
+  color: var(--Red);
+  background-color: var(--White);
+}
+
+.mijn-reizen-info-link {
+  color: var(--Blue);
+  font-size: 14px;
+}
+
+/* annuleer */
+#annuleer-titel {
+  color: #080708;
+  justify-self: left;
+  font-size: 30px;
+}
+
+.annuleer-bg-img {
+  background: url(../assets/images/strand.jpeg);
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.annuleer-container {
+  padding: 2vh;
+  color: #080708;
+  background-color: #fef9ffb1;
+  height: fit-content;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  position: relative;
+}
+
+#annuleer-back-to-mijn-reizen-link {
+  color: #080708;
+  justify-self: left;
+  font-size: 30px;
+  text-decoration: underline black solid;
+}
+
+/* recensies */
+
+.ster {
+  height: 50px;
+  width: 50px;
+}
+
+.ster > input {
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/images/ster.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* admin tussenstop */
+.admin-tussenstop-container {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-tussenstop-reizen {
+  display: flex;
+  width: 40vw;
+  height: 70vh;
+}
+
+.admin-tussenstop-link {
+  color: #080708;
+  margin: 20px;
+  border: #0b5810 solid 3px;
+  height: 10vh;
+  width: 11vw;
+  border-radius: 12px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  margin-top: 200px;
+}
