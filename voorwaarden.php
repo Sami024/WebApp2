@@ -1,8 +1,3 @@
-
-
-<?php
-global$conn;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
